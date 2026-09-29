@@ -1,0 +1,20 @@
+{
+    "generation_method": "Constrained scaffold-based molecular transformation",
+    "starting_compounds": 20,
+    "generated_candidates": 514,
+    "property_filter": {
+        "MW": "150-650 Da",
+        "LogP": "-2 to 7",
+        "TPSA": "<=180 A2",
+        "HBD": "<=8",
+        "HBA": "<=12",
+        "Rotatable_Bonds": "<=15",
+        "Heavy_Atoms": "10-50"
+    },
+    "applicability_thresholds": {
+        "in_domain": "Tanimoto >= 0.60",
+        "borderline": "0.40-0.59",
+        "out_of_domain": "<0.40"
+    },
+    "scientific_note": "Generated molecules are computational hypotheses. They are not experimentally validated GyrB inhibitors."
+}
