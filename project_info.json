@@ -1,0 +1,16 @@
+{
+  "project": "GyrB AI-CADD Platform",
+  "target": "DNA gyrase B (GyrB)",
+  "target_structure": "PDB 4DUH",
+  "modules": [
+    "Ligand-Based Drug Design",
+    "Structure-Informed Scoring",
+    "Constrained De-novo Design",
+    "ADMET / Drug-Likeness Profiling",
+    "Applicability Domain",
+    "Integrated CADD Prioritization"
+  ],
+  "training_dataset": "BindingDB-derived GyrB IC50 records",
+  "generated_candidates": 514,
+  "note": "Structure-informed SBDD is a proxy and not molecular docking."
+}
