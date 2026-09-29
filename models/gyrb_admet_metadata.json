@@ -1,0 +1,24 @@
+{
+  "project": "GyrB AI-CADD Platform",
+  "step": 10,
+  "module": "ADMET / Drug-likeness risk profiling",
+  "input_file": "gyrb_project_data/GyrB_de_novo_candidates.csv",
+  "output_file": "gyrb_project_data/GyrB_de_novo_ADMET_candidates.csv",
+  "n_candidates": 514,
+  "smiles_column": "Candidate_SMILES",
+  "lbdd_probability_column": "LBDD_Activity_Probability",
+  "admet_score_formula": "1 - ADMET_Risk_Score / 20",
+  "lbdd_admet_prescore_formula": "0.70 * LBDD_Activity_Probability + 0.30 * ADMET_Score",
+  "risk_categories": {
+    "Low": "<=2",
+    "Moderate": "3-5",
+    "High": ">5"
+  },
+  "lipinski_rules": {
+    "MW": ">500",
+    "LogP": ">5",
+    "HBD": ">5",
+    "HBA": ">10"
+  },
+  "scientific_note": "Descriptor-based computational risk profiling. These outputs are not experimentally validated ADMET predictions and do not directly predict CYP inhibition, P-gp, hERG, hepatotoxicity, genotoxicity, or clinical ADMET."
+}
