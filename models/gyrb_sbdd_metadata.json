@@ -1,0 +1,22 @@
+{
+    "target": "E. coli DNA gyrase B",
+    "pdb_id": "4DUH",
+    "pdb_resolution_A": 1.5,
+    "reference_ligand": "RLI",
+    "reference_ligand_inchikey": "JOAXMWDTALNZFE-UHFFFAOYSA-N",
+    "method": "Structure-informed ligand scoring proxy",
+    "not_docking": true,
+    "components": {
+        "fingerprint_similarity": 0.5,
+        "pharmacophore_similarity": 0.3,
+        "physicochemical_similarity": 0.2
+    },
+    "fingerprint": "Morgan radius 2, 2048 bits",
+    "similarity": "Tanimoto",
+    "limitations": [
+        "This module does not perform molecular docking.",
+        "It does not calculate binding free energy.",
+        "It does not predict an experimental Kd or IC50.",
+        "The score is a structure-informed prioritization proxy."
+    ]
+}
