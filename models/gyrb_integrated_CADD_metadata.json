@@ -1,0 +1,26 @@
+{
+  "project": "GyrB AI-CADD Platform",
+  "step": 11,
+  "module": "Integrated CADD scoring",
+  "candidate_count": 514,
+  "weights": {
+    "LBDD": 0.4,
+    "SBDD_structure_informed": 0.3,
+    "ADMET": 0.2,
+    "Applicability_Domain": 0.1
+  },
+  "priority_thresholds": {
+    "High": ">=0.80",
+    "Intermediate": "0.65-0.799999",
+    "Lower": "<0.65"
+  },
+  "scientific_limitations": [
+    "Integrated score is a heuristic computational prioritization score.",
+    "Weights were selected as transparent design choices and were not optimized against experimental outcomes.",
+    "SBDD is a structure-informed similarity proxy and is not molecular docking.",
+    "Integrated score is not an experimentally validated potency prediction.",
+    "ADMET score represents descriptor-based risk profiling.",
+    "Applicability-domain thresholds are heuristic.",
+    "Experimental testing is required to establish GyrB inhibition."
+  ]
+}
